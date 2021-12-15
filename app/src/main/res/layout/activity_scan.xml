@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/system_color"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/top_crd"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:elevation="1dp"
+        app:cardBackgroundColor="@color/system_color">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <Button
+                style="?borderlessButtonStyle"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:background="#00000000"
+                android:onClick="scn_back2" />
+
+            <ImageButton
+                android:id="@+id/top_txt"
+                android:layout_width="12dp"
+                android:layout_height="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="31dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:onClick="scn_back"
+                android:src="@drawable/back"
+
+                />
+
+            <TextView
+                android:id="@+id/txtv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="23dp"
+                android:fontFamily="@font/intrbld"
+                android:gravity="center"
+                android:text="Scan"
+                android:textColor="@color/txt_color"
+                android:textSize="27sp"
+                android:visibility="visible"
+
+                />
+
+
+            <Button
+                android:id="@+id/svbtn"
+                style="?borderlessButtonStyle"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="17dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/select"
+                android:backgroundTint="@color/colorPrimary"
+                android:fontFamily="@font/ggl"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/txtr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="23dp"
+                android:fontFamily="@font/intrbld"
+                android:gravity="center"
+                android:text="Result"
+                android:textColor="@color/black"
+                android:textSize="23sp"
+                android:visibility="invisible"
+
+
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_above="@id/slt"
+        android:layout_below="@+id/top_crd"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="110dp"
+
+
+        />
+
+
+    <ImageView
+        android:id="@+id/scan1_animation"
+        android:layout_width="320dp"
+        android:layout_height="250dp"
+        android:layout_below="@+id/top_crd"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="60dp"
+        android:alpha="0.9"
+        android:background="@drawable/scan_drw" />
+
+
+    <Button
+        android:id="@+id/slt"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_above="@+id/dtc"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/add_radius"
+        android:backgroundTint="#F44336"
+        android:fontFamily="@font/ggl"
+        android:onClick="selectImage"
+        android:text="Select Image"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="17sp" />
+
+    <Button
+        android:id="@+id/dtc"
+        style="?borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/add_radius"
+        android:backgroundTint="#F44336"
+        android:fontFamily="@font/ggl"
+        android:onClick="startRecognizing"
+        android:text="Tap For Scan"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="17sp" />
+
+
+    <ScrollView
+        android:id="@+id/scview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bttn"
+        android:layout_below="@+id/top_crd"
+        android:layout_margin="13dp"
+        android:background="@color/system_color"
+        android:scrollbars="none"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:ems="10"
+            android:gravity="top|left"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:textColor="#4CAF50"
+            android:textSize="16sp"
+            app:layout_goneMarginTop="40dp" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/bttn"
+        style="?borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/add_radius"
+        android:backgroundTint="@color/delete"
+        android:fontFamily="@font/ggl"
+        android:onClick="again"
+        android:text="Scan again"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textSize="17sp"
+        android:visibility="invisible"
+
+
+        />
+
+
+</RelativeLayout>
+

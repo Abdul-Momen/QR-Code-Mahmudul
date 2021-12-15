@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/gudea</item>
+        <item>@font/istok_web</item>
+        <item>@font/kurale</item>
+        <item>@font/martel_sans_extrabold</item>
+        <item>@font/muli</item>
+    </array>
+</resources>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/system_color"
+    tools:context="notes.notepad.notebook.keepnote.note.Security_check">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/secure_anim"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="20dp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="security.json"
+        app:lottie_loop="true"
+        android:visibility="gone"/>
+
+
+    <RelativeLayout
+        android:id="@+id/sc_one"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/main_animation"
+            android:layout_width="320dp"
+            android:layout_height="170dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="loading.json"
+            app:lottie_loop="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sc_two"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="15dp"
+        android:visibility="invisible">
+
+
+        <TextView
+            android:id="@+id/btm_sc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/check_sc"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="5dp"
+            android:text="Enter Security Key"
+            android:fontFamily="@font/intrmdm"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/check_sc"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_above="@+id/hint_txt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/add_radius"
+            android:hint="Enter Here"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColor="#fff"
+            android:textColorHint="#9A9A9A" />
+
+        <TextView
+            android:id="@+id/hint_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/check_btn"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="30dp"
+            android:text="@string/see_hint"
+            android:textColor="#888888"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/check_btn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/add_radius"
+            android:backgroundTint="@color/tint_clr"
+            android:fontFamily="@font/intrmdm"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textSize="17sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

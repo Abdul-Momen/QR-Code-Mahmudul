@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/system_color"
+    tools:context="notes.notepad.notebook.keepnote.note.Security_key">
+
+    <Button
+        style="?borderlessButtonStyle"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:background="#00000000"
+        android:onClick="sk_back2" />
+    <Button
+        android:id="@+id/menu_button"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/down_test"
+        android:fontFamily="@font/system_font"
+        android:onClick="Pop_menu_sc"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/txt_color"
+        android:textSize="14dp"
+        android:textStyle="bold"
+/>
+
+    <ImageButton
+        android:id="@+id/top_txt"
+        android:layout_width="12dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:onClick="sk_back"
+        android:src="@drawable/back"
+
+        />
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_sc"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_above="@+id/name_sc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        app:civ_border_color="#00C3C3C3"
+        app:civ_border_width="1dp" />
+
+    <TextView
+        android:id="@+id/name_sc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ggl"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="150dp"
+        android:layout_above="@+id/lcnt"
+        android:textSize="18sp" />
+
+
+    <RelativeLayout
+        android:id="@+id/lcnt"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/btm_sk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ggl"
+        android:text="Security Key"
+        android:textColor="#FFFFFF"
+        android:layout_marginLeft="35dp"
+        android:layout_marginBottom="8dp"
+        android:layout_above="@+id/add_key"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/add_key"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_above="@+id/hint_key"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/add_radius"
+        android:hint="Enter here"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:inputType="textPassword"
+        android:maxLength="10"
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:layout_marginBottom="15dp"
+        android:textColorHint="#AAAAAA" />
+
+    <EditText
+        android:id="@+id/hint_key"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_above="@+id/save_skey"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/add_radius"
+        android:hint="Hint (optional)"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textColor="#fff"
+        android:layout_marginBottom="30dp"
+        android:textColorHint="#AAAAAA" />
+
+    <Button
+        android:id="@+id/save_skey"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/add_radius"
+        android:fontFamily="@font/ggl"
+        android:backgroundTint="@color/tint_clr"
+        android:text="Submit"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textAllCaps="false"
+        android:textColor="#0C9393"
+        android:textSize="18sp" />
+
+
+
+
+
+</RelativeLayout>

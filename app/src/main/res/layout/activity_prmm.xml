@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/system_color"
+    tools:context="notes.notepad.notebook.keepnote.note.prmm">
+
+
+    <ImageView
+
+        android:layout_width="260dp"
+        android:layout_height="220dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/question" />
+
+    <ImageView
+        android:id="@+id/qim"
+        android:layout_width="300dp"
+        android:layout_height="20dp"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp" />
+
+    <TextView
+        android:id="@+id/prm2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/qim"
+        android:layout_centerHorizontal="true"
+
+        android:fontFamily="@font/intrbld"
+        android:gravity="center"
+        android:text="Why Subscribe?"
+        android:textColor="@color/txt_color"
+        android:textSize="24dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/prm2"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="@string/why_premium"
+        android:textColor="@color/txt_color"
+        android:textSize="16dp" />
+
+
+</RelativeLayout>

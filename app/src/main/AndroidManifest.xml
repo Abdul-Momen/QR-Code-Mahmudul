@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.arnd.airdoc">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+
+        <meta-data
+            android:name="com.google.android.wearable.standalone"
+            android:value="true" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".Scan" />
+        <activity android:name="notes.notepad.notebook.keepnote.note.document_view" />
+        <activity android:name="notes.notepad.notebook.keepnote.note.home_screen" />
+        <activity android:name="notes.notepad.notebook.keepnote.note.logout" />
+        <activity android:name="notes.notepad.notebook.keepnote.note.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name="notes.notepad.notebook.keepnote.note.slide" />
+        <activity android:name="notes.notepad.notebook.keepnote.note.Add_New_Document" />
+        <activity android:name="notes.notepad.notebook.keepnote.note.prmm" />
+        <activity android:name="notes.notepad.notebook.keepnote.note.Security_check" />
+        <activity android:name="notes.notepad.notebook.keepnote.note.Security_key" />
+        <activity android:name="notes.notepad.notebook.keepnote.note.splsh">
+
+
+        </activity>
+
+        <activity android:name="notes.notepad.notebook.keepnote.note.srch" />
+
+    </application>
+
+</manifest>

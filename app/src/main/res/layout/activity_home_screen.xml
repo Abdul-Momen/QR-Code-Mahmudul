@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/system_color"
+    tools:context="notes.notepad.notebook.keepnote.note.home_screen">
+
+
+    <RelativeLayout
+        android:id="@+id/h1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp">
+
+        <Button
+            android:id="@+id/shw_drw"
+            style="?borderlessButtonStyle"
+            android:layout_width="80dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/shw_drw2"
+            android:layout_width="25dp"
+            android:layout_height="17dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/drawer"
+            android:backgroundTint="@color/txt_color" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="18dp"
+            app:civ_border_color="#00F3F3F3"
+            app:civ_border_width="0.5dp" />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/h2"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/h1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:onClick="hm_rdrc_scan"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:background="@drawable/scan"
+                android:backgroundTint="@color/one"
+                android:padding="5dp" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="53dp"
+            android:onClick="hm_key"
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center"
+                android:background="@drawable/key"
+                android:backgroundTint="#0C9393"
+                android:padding="5dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="105dp"
+            android:onClick="hm_profile"
+
+            app:cardBackgroundColor="#FFFFFF"
+            app:cardCornerRadius="20dp">
+
+            <ImageView
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_gravity="center"
+                android:background="@drawable/user"
+                android:backgroundTint="#DB6400"
+                android:padding="5dp" />
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/h3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/h1"
+        android:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/ggl"
+            android:text="Hi,\nUser"
+            android:textColor="@color/txt_color"
+            android:textSize="20dp" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/itm_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/h2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/intrbld"
+        android:text="My Notes"
+        android:textColor="@color/txt_color"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itm_count"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="18dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            app:reverseLayout="true"
+            android:id="@+id/rclrv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+
+
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/new_user"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_below="@+id/itm_count"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/new_btm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Write your first note"
+            android:textColor="#FFFFFF"
+            android:textSize="17dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/drw_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FC151515"
+        android:clickable="false"
+        android:visibility="gone">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:clickable="false"
+            android:elevation="10dp"
+            app:cardBackgroundColor="#494949"
+            app:cardCornerRadius="22dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/d1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:clickable="false"
+                    android:fontFamily="@font/intrbld"
+                    android:text="@string/app_name"
+                    android:textColor="@color/txt_color"
+                    android:textSize="18dp" />
+
+
+                <Button
+                    android:id="@+id/d2"
+                    style="?borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/d1"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/system_font"
+                    android:onClick="drw_scan"
+                    android:text="Scan"
+                    android:textAllCaps="false"
+                    android:textColor="@color/txt_color"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/d3"
+                    style="?borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/d2"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/system_font"
+                    android:onClick="drw_security_key"
+                    android:text="Security Key"
+                    android:textAllCaps="false"
+                    android:textColor="@color/txt_color"
+                    android:textSize="15dp" />
+
+
+                <Button
+                    android:id="@+id/d4"
+                    style="?borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/d3"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/system_font"
+                    android:onClick="drw_logout"
+                    android:text="Sign Out"
+                    android:textAllCaps="false"
+                    android:textColor="@color/txt_color"
+                    android:textSize="15dp" />
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/canceldrw"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/close" />
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_document"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#FFFFFF"
+        android:onClick="flt_action"
+        android:src="@drawable/add"
+        app:borderWidth="0dp" />
+
+
+</RelativeLayout>

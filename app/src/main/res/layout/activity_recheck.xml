@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/system_color"
+    tools:context="notes.notepad.notebook.keepnote.note.recheck">
+
+
+    <TextView
+        android:id="@+id/top_Airdoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/intrbld"
+        android:text="Unlock "
+        android:textColor="@color/txt_color"
+        android:textSize="28dp"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:id="@+id/top_Airdoc2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_Airdoc"
+        android:layout_marginLeft="28dp"
+        android:fontFamily="@font/intr"
+        android:text="Powerful &amp; Secure Notepad"
+        android:textColor="@color/txt_color"
+        android:textSize="16dp"
+
+
+        />
+
+    <TextView
+        android:id="@+id/c_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="45dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="rdrc_cncl"
+        android:text="X"
+        android:textColor="@color/txt_color"
+        android:textSize="24dp" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/pim3"
+        android:layout_width="300dp"
+        android:layout_height="280dp"
+        android:layout_below="@+id/top_Airdoc2"
+        android:layout_centerHorizontal="true"
+        app:lottie_autoPlay="true"
+        android:layout_marginTop="50dp"
+        app:lottie_fileName="newuser2.json"
+        app:lottie_loop="true" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/subscribe2"
+        android:layout_below="@+id/pim3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/top_sub2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/intr"
+            android:text="\u2022 Unlimited Private Storage\n\u2022 High Security with Encryption\n\u2022 Real Time Sync For
+All Devices\n\u2022 Scan documents, books, notes e.t.c\n\u2022 Always available data  (Offline)\n\u2022 Listen (Text to Speech)
+"
+            android:layout_centerVertical="true"
+            android:textColor="@color/txt_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/smtxt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/intr"
+            android:text="Subscribe now, Cancel anytime"
+            android:layout_centerHorizontal="true"
+            android:textColor="#aaaaaa"
+            android:textSize="13dp" />
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/subscribe2"
+        android:layout_width="320dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/select2"
+        android:fontFamily="@font/intrbld"
+        android:onClick="subscribe"
+        android:text="Continue"
+        android:backgroundTint="#fff"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/btm_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:onClick="rdr_prm"
+        android:text="@string/knw_more"
+        android:textColor="@color/txt_color"
+        android:textSize="14dp" />
+
+
+</RelativeLayout>

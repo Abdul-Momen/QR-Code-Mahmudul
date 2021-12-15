@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/system_color"
+    tools:context="notes.notepad.notebook.keepnote.note.logout">
+
+
+    <Button
+        style="?borderlessButtonStyle"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:background="#00FAFAFA"
+        android:onClick="log_back2" />
+
+    <ImageButton
+        android:id="@+id/top_txt"
+        android:layout_width="12dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="26dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:onClick="log_back"
+        android:src="@drawable/back"
+
+        />
+
+    <TextView
+        android:id="@+id/profile_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/intrbld"
+        android:text="Profile"
+        android:textColor="@color/txt_color"
+        android:textSize="22sp" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/full_profile"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+    android:layout_above="@+id/profile_email"
+        android:layout_centerHorizontal="true"
+        app:civ_border_color="#00C3C3C3"
+        app:civ_border_width="1dp" />
+
+    <TextView
+        android:id="@+id/profile_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/ggl"
+        android:text="."
+        android:textColor="@color/txt_color"
+        android:textSize="16sp" />
+
+
+    <Button
+        android:id="@+id/logout"
+        style="?borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/add_radius"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/ggl"
+        android:text="Sign out"
+        android:textAllCaps="false"
+        android:textColor="#DB6400"
+        android:textSize="19sp" />
+
+
+</RelativeLayout>

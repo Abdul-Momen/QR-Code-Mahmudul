@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "629570327962",
+    "project_id": "airnote-b0e19",
+    "storage_bucket": "airnote-b0e19.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:629570327962:android:459ea6da5e3bc0fed95623",
+        "android_client_info": {
+          "package_name": "notes.notepad.notebook.keepnote.note"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "629570327962-8o58cp4j30o7tvf73n7d23phrjs293ft.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC89JTXgnTDf3lI8iajOCVJUqURpKKRJFA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "629570327962-8o58cp4j30o7tvf73n7d23phrjs293ft.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

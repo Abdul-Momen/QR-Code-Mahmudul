@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/system_color">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:fontFamily="@font/martel_sans_extrabold"
+        android:text="Unlimited Notes"
+        android:textColor="@color/txt_color"
+        android:textSize="33dp" />
+
+    <ImageView
+        android:id="@+id/slim"
+        android:layout_width="320dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ic_page1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/slim"
+        android:layout_margin="35dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Note as much you want with no restriction to storage space."
+        android:textColor="@color/txt_color"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/nxtsl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="swipe left"
+        android:textColor="@color/txt_color"
+        android:textSize="17dp"
+        android:fontFamily="sans-serif-light"
+
+
+        />
+
+
+</RelativeLayout>
